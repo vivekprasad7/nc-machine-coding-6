@@ -2,10 +2,19 @@
     text-align:center;
 }
 
+ .res-title{
+    cursor:pointer;
+}
+
+.res-title:hover{
+    color:crimson;
+    transform: scale(1.1);
+}
+
 .cuisine-item{
     background-color: crimson;
     color:white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding:0.1rem 0.7rem;
     margin:1rem;
     display: inline-block;

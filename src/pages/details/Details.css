@@ -1,3 +1,16 @@
 .person img{
     border-radius: 50%;
 }
+
+.details-page{
+    text-align: center;
+}
+
+button{
+    color:white;
+    background-color: crimson;
+    border:none;
+    padding:0.5rem 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}

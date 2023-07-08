@@ -17,16 +17,17 @@ export const Details = () => {
    
 
   return (
-    <div>
+    <div className='details-page'>
         {
             showReviewModal && (<Review showReviewModal={showReviewModal} setShowReviewModal={setShowReviewModal} resID={ID}/>)
         }
-        <h1>{singleRestaurant.name}</h1>
+        <h1 className='title'>{singleRestaurant.name}</h1>
         <div>{singleRestaurant?.menu?.map((item) => {
             return(<>{item.name}, </>)
         })}</div>
         <p>Address: {singleRestaurant.address}</p>
         <p>Phone: {singleRestaurant.phone}</p>
+        <p>AverageRating: {singleRestaurant.averageRating}</p>
         <button onClick={() => setShowReviewModal(!showReviewModal)}>Add Review</button>
         <hr></hr>
 
@@ -41,7 +42,7 @@ export const Details = () => {
                                 <p>{person.name}</p>
                             </div>
                             <p>Rating: {person.rating}</p>
-                            <p>{person.comment}</p>
+                            <p>Comment: {person.comment}</p>
                         </div>
                     )
                 })

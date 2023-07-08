@@ -31,8 +31,8 @@ export const Home = () => {
         filter?.map((restaurant) => {
 
           return(
-            <div>
-              <h2 onClick={() => navigate(`/restaurant/${restaurant.id}`)}>{restaurant.name}</h2>
+            <div className='res-details'>
+              <h2 className='res-title' onClick={() => navigate(`/restaurant/${restaurant.id}`)}>{restaurant.name}</h2>
               {
                 restaurant.menu.map((item) => {
 
