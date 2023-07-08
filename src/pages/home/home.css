@@ -1,0 +1,13 @@
+.home-page{
+    text-align:center;
+}
+
+.cuisine-item{
+    background-color: crimson;
+    color:white;
+    border-radius: 5px;
+    padding:0.1rem 0.7rem;
+    margin:1rem;
+    display: inline-block;
+    cursor:pointer;
+}
